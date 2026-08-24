@@ -38,12 +38,24 @@
 
 <div class="sailor-hero wrap">
   <div class="sailor-hero-copy">
-    <p>The Sailor Rover research program studies a wind-driven rover concept whose motion depends on aerodynamic forces. My work spans the experimental infrastructure, sensing and data acquisition, and control systems needed to characterize and command the rover.</p>
-    <p>Instead of splitting this research into unrelated portfolio entries, this page keeps the program together and links to the three technical workstreams below.</p>
+    <p>The Sailor Rover research program studies a wind-driven ground vehicle whose behavior depends on the interaction between the ambient wind, the rover's motion, and its controllable aerodynamic surfaces. My role focuses on building the experimental and embedded systems needed to measure that environment and eventually use those measurements for closed-loop control.</p>
+    <p>The project is therefore more than a single rover build. It combines a controlled wind facility, an automated wind-measurement system, and rover control hardware into one research platform. The three workstreams below show how those pieces connect.</p>
   </div>
   <img src="images/windchamber-1.png" alt="Sailor Rover wind chamber experimental setup">
 </div>
 
+
+<div class="sailor-overview">
+  <h2>Overall research objective</h2>
+  <p>The long-term goal is to understand and control a rover whose available driving force changes with wind speed and direction. Before a control algorithm can reliably command the rover, the system needs accurate information about the surrounding flow, the rover's own motion, and the response of its actuators. My work has focused on building that measurement-and-control chain from the ground up.</p>
+  <p>The wind chamber provides a repeatable flow environment. The wind profiler maps how velocity changes throughout that chamber instead of assuming the flow is uniform. The rover controls work then uses sensing, actuation, and feedback concepts to move toward automatic adjustment of the rover's aerodynamic configuration. Keeping these efforts under one research program makes the engineering progression clearer: <strong>characterize the environment → measure the flow → estimate the state → command the rover.</strong></p>
+
+  <h2>Why the wind characterization matters</h2>
+  <p>A control system is only as useful as the measurements feeding it. If the chamber contains large velocity gradients, turbulence, or local low-speed regions, rover tests can produce misleading results unless those variations are known. The automated profiler was developed to sweep through many positions and record differential pressure, airspeed, position, and timing information so the test volume can be mapped quantitatively.</p>
+
+  <h2>How this develops into a controls problem</h2>
+  <p>Once the aerodynamic environment is characterized, the next step is using onboard measurements to determine how the rover should respond. The controls work is progressing from basic actuator commands and PID experiments toward an embedded architecture that can combine wind measurements with rover motion information. The eventual objective is for the rover to adjust itself based on measured conditions instead of relying on fixed, manually selected settings.</p>
+</div>
 <section class="soft">
   <div class="wrap">
     <div class="section-title">Research Workstreams</div>
@@ -76,7 +88,7 @@
     <div>
       <div class="section-title">Experimental Evidence</div>
       <div class="section-heading">From facility characterization to data</div>
-      <p>The chamber and profiler are designed as one measurement chain: establish controlled flow, sweep the sensing system through the test volume, and use the resulting velocity field to evaluate future rover configurations and control strategies.</p>
+      <p>The chamber and profiler are designed as one measurement chain: establish controlled flow, move the sensing system through the test volume, convert differential pressure into local airspeed, and assemble the measurements into a spatial map of the flow field. The plots below are examples of that characterization process. The three-dimensional map shows how wind velocity varies with position, while the live data view shows the pressure and airspeed measurements collected during an automated traverse.</p>
     </div>
     <div class="sailor-evidence-grid">
       <figure><img src="images/windchamber-2.png" alt="Three-dimensional wind velocity distribution measured in the Sailor Rover wind chamber"><figcaption>Measured wind-velocity distribution across the chamber test volume.</figcaption></figure>

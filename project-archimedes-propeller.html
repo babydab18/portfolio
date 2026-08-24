@@ -55,28 +55,32 @@
 </div>
 
 <div class="detail-body">
-  
-        <p>This research focused on the aeroacoustics of propeller configurations — how propeller
-        design choices translate into the noise a system generates, not just its aerodynamic
-        performance. I ran high-fidelity CFD simulations and validated them against physical
-        test data.</p>
-        <h2>What I did</h2>
-        <ul>
-          <li>Ran DDES CFD simulations in ANSYS Fluent across multiple propeller configurations, using
-          SST k–ω turbulence modeling and FW–H aeroacoustic modeling</li>
-          <li>Built meshes up to 15.7 million cells with y+ &lt; 1, and evaluated thrust, torque,
-          figure of merit, and acoustic directivity for each configuration</li>
-          <li>Operated a physical thrust and acoustic test rig using LabVIEW, comparing
-          experimental data directly against the CFD predictions</li>
-          <li>Contributed to an AIAA 2026 abstract and partial manuscript before the research
-          concluded in May 2026</li>
-        </ul>
-        <h2>Why it matters</h2>
-        <p>Propeller noise is a real design constraint for many aircraft and drone applications,
-        not just an afterthought. Being able to predict acoustic behavior computationally, and
-        trust that prediction because it's validated against real test data, is what makes this
-        kind of analysis useful for actual design decisions.</p>
-        
+  <p class="project-intro">This project investigated how the geometry of an Archimedes-style propeller affects both aerodynamic performance and the noise produced by the rotating blades. The work combined high-fidelity computational fluid dynamics with aeroacoustic post-processing so that thrust, torque, wake structure, and acoustic behavior could be studied together rather than as separate problems.</p>
+
+  <div class="callout"><strong>Research question:</strong> How does changing the number of helical blades alter the flow structures, propulsive performance, and acoustic signature of an Archimedes propeller while keeping the overall propeller size consistent?</div>
+
+  <h2>Computational approach</h2>
+  <p>I modeled multiple Archimedes propeller configurations in ANSYS Fluent. The simulations used Delayed Detached Eddy Simulation (DDES) with the SST k–ω turbulence model to resolve the unsteady flow around the rotating propeller. Aeroacoustic predictions were then obtained using the Ffowcs Williams–Hawkings (FW–H) formulation, allowing the same simulation campaign to be used to study both aerodynamic loading and sound generation.</p>
+  <p>The computational meshes reached roughly 15.7 million cells, with near-wall resolution targeted below y+ = 1. For each geometry, I evaluated quantities such as thrust, torque, figure of merit, pressure distribution, vortical structures, and acoustic directivity. The CFD image above shows the type of wake analysis used to identify coherent vortices and regions of strong rotational flow.</p>
+
+  <h2>What the flow field showed</h2>
+  <p>The simulations showed that the helical blade geometry produces a complicated three-dimensional wake rather than a simple, uniform slipstream. Strong pressure differences near the blade leading-edge regions contribute substantially to thrust generation, while the blade tips shed distinct vortex structures that persist downstream. Visualizing those structures with Q-criterion and vorticity-based quantities made it possible to connect features in the wake to changes in the propeller geometry.</p>
+  <p>The acoustic analysis also indicated that the sound field is directional. Instead of radiating uniformly, the propeller can produce stronger tonal content in certain directions. That matters for small UAV applications because a configuration with acceptable thrust may still be undesirable if its dominant noise is concentrated toward an observer or sensitive area.</p>
+
+  <h2>Experimental connection</h2>
+  <p>The computational work was paired with laboratory testing using a physical propeller setup and LabVIEW-based data acquisition. The purpose of the experimental work was to compare measured propeller behavior with the numerical predictions and improve confidence in the simulation methodology. This combination of CFD and testing was important because a visually convincing flow solution is not enough by itself; the aerodynamic trends need to agree with physical measurements before the model can be trusted for design decisions.</p>
+
+  <h2>My contributions</h2>
+  <ul>
+    <li>Ran DDES CFD simulations in ANSYS Fluent for multiple Archimedes propeller configurations using SST k–ω turbulence modeling and FW–H aeroacoustics.</li>
+    <li>Generated and evaluated high-resolution meshes, including near-wall refinement and rotating-domain setup.</li>
+    <li>Processed thrust, torque, figure of merit, pressure, wake, and acoustic data to compare the propeller configurations.</li>
+    <li>Worked with the physical thrust/acoustic test setup and LabVIEW data acquisition to connect simulation results with experiment.</li>
+    <li>Contributed to the AIAA 2026 manuscript documenting the numerical method and preliminary findings.</li>
+  </ul>
+
+  <h2>Why this project matters</h2>
+  <p>For a drone or other small aircraft, propeller design is a trade between efficiency, thrust, structural practicality, and noise. This project gave me experience treating those quantities as a coupled engineering problem. It also strengthened my ability to move between geometry, meshing, turbulence modeling, unsteady CFD, data reduction, physical testing, and technical communication rather than treating simulation as an isolated software exercise.</p>
 </div>
 
 <div class="project-resource wrap">
