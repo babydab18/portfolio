@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sailor Rover Dynamics — Ranvir Chennupalli</title>
+<meta name="description" content="Sailor Rover Dynamics research: wind-chamber characterization, autonomous wind profiling, and rover control systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="sailor-rover.html" class="current">Sailor Rover</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <div class="nav-title">Ranvir Chennupalli's Portfolio</div>
+  <div class="nav-social">
+    <a href="#" title="LinkedIn (add your URL)" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05C19.9 8 21 10.13 21 13.5V23h-4v-8.3c0-2-.04-4.5-2.75-4.5-2.75 0-3.17 2.15-3.17 4.36V23h-4V8z"/></svg>
+    </a>
+    <a href="https://github.com/babydab18/portfolio" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.3 4.3 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2a4.3 4.3 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .5.4.9 1.1.9 2.3v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+    </a>
+    <a href="mailto:rpchennu@ncsu.edu" title="Email" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+    </a>
+  </div>
+</nav>
+
+<div class="detail-header wrap">
+  <div class="detail-eyebrow">NC State · Sailor Rover Dynamics</div>
+  <h1 class="detail-title">Sailor Rover Research<span class="status-pill active">Active</span></h1>
+  <div class="detail-meta">May 2026 — Present · Advisor: Andre Mazzoleni, Professor</div>
+</div>
+
+<div class="sailor-hero wrap">
+  <div class="sailor-hero-copy">
+    <p>The Sailor Rover research program studies a wind-driven rover concept whose motion depends on aerodynamic forces. My work spans the experimental infrastructure, sensing and data acquisition, and control systems needed to characterize and command the rover.</p>
+    <p>Instead of splitting this research into unrelated portfolio entries, this page keeps the program together and links to the three technical workstreams below.</p>
+  </div>
+  <img src="images/windchamber-1.png" alt="Sailor Rover wind chamber experimental setup">
+</div>
+
+<section class="soft">
+  <div class="wrap">
+    <div class="section-title">Research Workstreams</div>
+    <div class="section-heading">Three connected systems</div>
+    <div class="projects-grid sailor-subgrid">
+      <a class="project-tile" href="project-windprofiler.html">
+        <div class="tag-line">Instrumentation · DAQ</div>
+        <h3>Wind Profiler</h3>
+        <p>Autonomous chamber scanning, differential-pressure sensing, firmware, and a Python data pipeline for high-density wind-field measurements.</p>
+        <span class="learn-more">Open Wind Profiler →</span>
+      </a>
+      <a class="project-tile" href="project-windchamber.html">
+        <div class="tag-line">Experimental Aerodynamics</div>
+        <h3>Wind Chamber</h3>
+        <p>Development, characterization, and testing of the controlled-flow facility used to validate rover aerodynamic behavior.</p>
+        <span class="learn-more">Open Wind Chamber →</span>
+      </a>
+      <a class="project-tile" href="project-rover-controls.html">
+        <div class="tag-line">Controls · Embedded Systems</div>
+        <h3>Rover Control Systems</h3>
+        <p>Closed-loop control development for rover actuation, progressing from PID experiments toward an integrated embedded control architecture.</p>
+        <span class="learn-more">Open Rover Controls →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap sailor-evidence">
+    <div>
+      <div class="section-title">Experimental Evidence</div>
+      <div class="section-heading">From facility characterization to data</div>
+      <p>The chamber and profiler are designed as one measurement chain: establish controlled flow, sweep the sensing system through the test volume, and use the resulting velocity field to evaluate future rover configurations and control strategies.</p>
+    </div>
+    <div class="sailor-evidence-grid">
+      <figure><img src="images/windchamber-2.png" alt="Three-dimensional wind velocity distribution measured in the Sailor Rover wind chamber"><figcaption>Measured wind-velocity distribution across the chamber test volume.</figcaption></figure>
+      <figure><img src="images/windprofiler-data.jpg" alt="Airspeed and dynamic-pressure data collected during a wind profiler run"><figcaption>Live airspeed and dynamic-pressure outputs from an automated sweep.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="project-nav wrap">
+  <a href="projects.html">← All Projects</a>
+  <a href="project-windprofiler.html">Start with Wind Profiler →</a>
+</div>
+
+<footer>
+  <div class="contact"><a href="mailto:rpchennu@ncsu.edu">rpchennu@ncsu.edu</a> · 919-889-0595 · Apex, NC</div>
+  <div class="meta">Last updated 2026</div>
+</footer>
+
+</body>
+</html>

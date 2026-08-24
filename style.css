@@ -296,3 +296,36 @@ footer .contact a { color: var(--navy); font-weight: 600; }
 footer .meta { font-size: 12px; color: #9A9A94; }
 
 .project-resource { padding: 8px 32px 18px; max-width: 1080px; margin: 0 auto; }
+
+
+/* ---------- Sailor Rover grouped research page ---------- */
+.sailor-feature { grid-column: span 2; }
+.sailor-hero { display: grid; grid-template-columns: 1fr 1.1fr; gap: 34px; align-items: center; padding-bottom: 52px; }
+.sailor-hero-copy p { font-size: 16px; margin-bottom: 16px; }
+.sailor-hero img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); }
+.sailor-subgrid { grid-template-columns: repeat(3, 1fr); }
+.sailor-evidence { padding-top: 58px; padding-bottom: 34px; }
+.sailor-evidence > div:first-child { max-width: 760px; }
+.sailor-evidence > div:first-child p { font-size: 15.5px; margin-bottom: 28px; }
+.sailor-evidence-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.sailor-evidence-grid figure { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #fff; }
+.sailor-evidence-grid img { width: 100%; height: 310px; object-fit: contain; display: block; background: var(--bg-soft); }
+.sailor-evidence-grid figcaption, .media-caption { padding: 12px 14px; font-size: 12.5px; color: #6B6E73; }
+.single-gallery { grid-template-columns: 1.6fr .7fr; grid-template-rows: 1fr; align-items: stretch; }
+.single-gallery .g-main { grid-row: auto; min-height: 430px; }
+.gallery-note { border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: flex; flex-direction: column; justify-content: center; background: var(--bg-soft); }
+.gallery-note strong { color: var(--ink); font-size: 15px; margin-bottom: 8px; }
+.gallery-note span { font-size: 13px; }
+.arch-gallery { grid-template-columns: 1.5fr .8fr; grid-template-rows: 1fr; align-items: stretch; }
+.arch-gallery .g-main { grid-row: auto; min-height: 430px; }
+.arch-gallery .g-main img { object-fit: contain; background: #fff; }
+.media-card { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--bg-soft); display: flex; flex-direction: column; }
+.media-card video { width: 100%; height: 100%; min-height: 360px; object-fit: cover; background: #111; }
+@media (max-width: 800px) {
+  .sailor-feature { grid-column: auto; }
+  .sailor-hero, .sailor-evidence-grid, .single-gallery, .arch-gallery { grid-template-columns: 1fr; }
+  .sailor-subgrid { grid-template-columns: 1fr; }
+  .single-gallery .g-main, .arch-gallery .g-main { min-height: 260px; }
+  .media-card video { min-height: 280px; }
+  .sailor-evidence-grid img { height: auto; }
+}
