@@ -5,7 +5,7 @@ Static GitHub Pages portfolio. No build step or dependencies are required.
 ## Current structure
 
 - `index.html` — homepage
-- `resume.html` — resume page (expects `resume.pdf` in the root)
+- `resume.html` — resume/contact page; add `resume.pdf` later if you want a public download
 - `projects.html` — top-level project/research index
 - `sailor-rover.html` — grouped Sailor Rover research overview
   - `project-windprofiler.html`
@@ -21,8 +21,8 @@ The Sailor Rover work is intentionally grouped under one top-level tab and one p
 
 ## Before publishing
 
-1. Add your latest resume PDF as `resume.pdf` in the root folder.
-2. Replace the remaining LinkedIn `href="#"` placeholders with your LinkedIn URL.
+1. If you want a public resume download, add your latest PDF as `resume.pdf` and change the resume page button back to a PDF link.
+2. LinkedIn was removed for now so there are no dead `#` links; add it back once you have the exact profile URL.
 3. Open `index.html` locally to check the site.
 
 ## Push to GitHub
